@@ -1,0 +1,19 @@
+{
+  "name": "javascript-coding-exercises",
+  "version": "1.0.0",
+  "description": "Various coding exercises in JavaScript :) ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BillalPatel/javascript-coding-exercises.git"
+  },
+  "author": "Billal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BillalPatel/javascript-coding-exercises/issues"
+  },
+  "homepage": "https://github.com/BillalPatel/javascript-coding-exercises#readme"
+}
