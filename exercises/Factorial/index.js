@@ -10,13 +10,16 @@
  */
 
 function factorial(num) {
-    let total = 1;
-
-    for (let i=0; i<num; i++) {
-
+    if (typeof(num) !== 'number') {
+        return undefined;
     }
+    
+    let total = 1;
+    for (let i=1; i<=num; i++) {
+        total = i * total;
+    };
 
-    return factorialNumber;
+    return total;
 }
 
 module.exports = factorial;

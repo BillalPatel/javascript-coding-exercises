@@ -10,8 +10,6 @@ describe('Factorial function', () => {
   // });
 
   test('should return null value for passing negative number or less/more than one argument', () => {
-    expect(factorial('hello')).toEqual(
-      
-    );
+    expect(factorial('Hello!')).toEqual(undefined);
   });
 });
