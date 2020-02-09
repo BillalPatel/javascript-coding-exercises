@@ -13,7 +13,25 @@
  */
 
 function anagrams(stringA, stringB) {
+    let status;
 
+    const strA = stringA.toLowerCase().replace(/[\"\'~`!@#$%^&()_={}[\]:;,.<>+\/?-]+|\d+|^\s+$/g, '').replace(/\s+/ig, ' ').split('');
+    const strB = stringB.toLowerCase().replace(/[\"\'~`!@#$%^&()_={}[\]:;,.<>+\/?-]+|\d+|^\s+$/g, '').replace(/\s+/ig, ' ').split('');
+
+    if (strA.length !== strB.length) {
+        status = false;
+    } else {
+        for(let i=0; i<strA.length; i++) {
+            if(strB.includes(strA[i])) {
+                status = true;
+            } else {
+                status = false;
+                break;
+            };
+        }
+    };
+
+    return status;
 }
 
 module.exports = anagrams;
