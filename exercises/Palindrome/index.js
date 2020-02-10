@@ -14,7 +14,22 @@
  */
 
 function palindrome(str) {
+    let status;
 
+    const arr = str.split('');
+    const reverseArr = str.split('').reverse();
+    const arrLength = arr.length;
+
+    for (let i=0; i<arrLength; i++) {
+        if (arr[i] === reverseArr[i]) {
+            status = true;
+        } else {
+            status = false;
+            break;
+        }
+    }
+
+    return status;
 }
 
 module.exports = palindrome;
