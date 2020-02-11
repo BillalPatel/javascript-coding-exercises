@@ -13,7 +13,21 @@
 */
 
 function longestWord(sen) {
+    let biggestLength = 0;
+    let longestWord = '';
 
+    const arrOfWords = sen
+        .replace(/[\"\'~`!@#$%^&()_={}[\]:;,.<>+\/?-]+|\d+|^\s+$/g, '')
+        .replace(/\s+/ig, ' ')
+        .split(' ');
+
+    for (let i=0; i<arrOfWords.length; i++) {
+        if (arrOfWords[i].length > longestWord.length) {
+            longestWord = arrOfWords[i];
+        }
+    }
+
+    return longestWord;
 }
 
 module.exports = longestWord;
