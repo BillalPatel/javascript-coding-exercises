@@ -13,7 +13,10 @@
  */
 
 function reverse(int) {
+  const intToArray = int.toString().split('').reverse().join('');
+  const reversedInt = parseInt(intToArray);
 
+  return reversedInt;
 }
 
 module.exports = reverse;
